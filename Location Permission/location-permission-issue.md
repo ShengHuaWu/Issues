@@ -10,7 +10,7 @@ For those seeking `Always` permission, Apple is now recommending a new permissio
 
 Nevertheless, if we adopt this two-phased approach, it is vital to let users understand beacon monitoring and Geo-fencing don't work unless they give `Always` permission. That means there must be some changes related to UI/UX.
 
-One possible workaround is we request `When In Use` permission at first. Once the user agrees, we immediately request `Always` permission again. In this case, users will see the above two-phased alerts one after the other. Generally speaking, this isn't what Apple suggests us doing, and it is necessary to provide an expressive message in each alert.
+One temporary workaround is we still request `Always` permission directly and provide an expressive message in the alert. The message should indicate beacon monitoring and Geo-fencing only work under `Always` permission. As far as I concerned, this isn't Apple's suggestion, and users could accidentally select `When In Use` permission.
 
 ### Reference
 * [WWDC 2017 Update: Significant Updates to Location Permissions Coming With iOS 11](https://m.rover.io/wwdc-2017-update-significant-updates-to-location-permissions-coming-with-ios-11-41f96001f87f)
